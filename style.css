@@ -1,5 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* Container de serviços */
 .servicos {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,18 +15,24 @@
 
 /* Grid para os cards */
 .servicos .rows-cards {
+    
     display: grid;
-    grid-template-columns: repeat(2, 450px);
-    gap: 30px 50px;
+    grid-template-columns: repeat(2, 460px);
+    gap: 30px;
     justify-content: center;
+}
+
+.nome-servico{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
 }
 
 /* Estilo dos cards */
 .servicos .row-card-item {
+    /* border: 1px solid red; */
     position: relative;
     background-color: rgba(134, 134, 130, 0.7);
-    width: 450px;
-    height: 350px;
+    height: 260px;
     padding: 15px;
     overflow: hidden;
     display: flex;
@@ -27,17 +40,18 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.08);
 }
 
 .servicos .row-card-item:hover {
-    opacity: 0.7; /* Efeito de hover */
+    /* opacity: 0.7; Efeito de hover */
 }
 
 .row-card-item:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do card */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra ao redor do card */
-    filter: brightness(1.2); /* Aumenta o brilho do card */
-    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s; /* Transições suaves */
+    transform: scale(1.02); /* Aumenta o tamanho do card */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); Sombra ao redor do card */
+    /* filter: brightness(1.2); Aumenta o brilho do card */
+    transition: transform 0.5s, box-shadow 0.3s, filter 0.3s; /* Transições suaves */
 }
 
 
@@ -68,11 +82,11 @@
 
 /* Container de cards */
 .cards-container {
-    border: 3px solid #000;
+   
     padding: 200px; /* Ajuste conforme necessário */
-    background-color: #f9f9f9;
-    background: linear-gradient(to bottom right, #ffffff, #e0e0e0); /* Gradiente opcional */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* background-color: #f9f9f9;
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0); Gradiente opcional */
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
     margin: 20px;
 }
 
@@ -86,28 +100,28 @@
     z-index: 3;
 }
 
-/*
-.servicos .row-card-item:nth-child(1) { /* Intranet */
+/* Intranet */
+/* .servicos .row-card-item:nth-child(1) { 
 background: linear-gradient(to bottom, #FFEB3B, #FFC107);
-}
-*/
+} */
 
-/*
-.servicos .row-card-item:nth-child(2) { /* GLPI */
-    background-color: #8B4513; /* Marrom */
-    color: #FFF; /* Texto claro */
-}
-*/
 
-/*
-.servicos .row-card-item:nth-child(3) { /* Sugestões */
-    background-color: rgba(0, 128, 0, 0.5); /* Verde com alpha */
-}
-*/
+/* GLPI */
+/* .servicos .row-card-item:nth-child(2) { 
+    background-color: #8B4513; 
+    color: #FFF; 
+} */
 
-/*
-.servicos .row-card-item:nth-child(4) { /* Em breve */
-    background-color: #D3D3D3; /* Cinza */
-}
-*/
+
+/* Sugestões */
+/* .servicos .row-card-item:nth-child(3) { 
+    background-color: rgba(0, 128, 0, 0.5); 
+} */
+
+
+/* Em breve */
+/* .servicos .row-card-item:nth-child(4) { 
+    background-color: #D3D3D3; 
+} */
+
 
