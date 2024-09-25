@@ -8,6 +8,7 @@
 .servicos {
     background: rgb(11,88,96);
 background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +33,7 @@ background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100
 .servicos .row-card-item {
     /* border: 1px solid red; */
     position: relative;
-    background-color: #C3C3C3;
+    background-color: #e5e5e5;
     height: 260px;
     padding: 15px;
     overflow: hidden;
