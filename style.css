@@ -6,7 +6,8 @@
 
 /* Container de serviços */
 .servicos {
-    
+    background: rgb(11,88,96);
+background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,7 @@
 .servicos .row-card-item {
     /* border: 1px solid red; */
     position: relative;
-    background-color: rgba(134, 134, 130, 0.7);
+    background-color: #C3C3C3;
     height: 260px;
     padding: 15px;
     overflow: hidden;
@@ -99,6 +100,14 @@
     color: #000; /* Cor padrão do ícone */
     z-index: 3;
 }
+
+/* Cores Alpha */
+
+/* 
+  --green-100: #c4d6d9;
+  --green-200: #7ca4a9;
+  --green-300: #6c9ca4;
+  --green-500: #0b5860; */
 
 /* Intranet */
 /* .servicos .row-card-item:nth-child(1) { 
