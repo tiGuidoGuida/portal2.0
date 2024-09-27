@@ -1,0 +1,26 @@
+<section class="servicos">
+        <div class="container" ></div>
+                <div class="rows-cards">
+                    <div class="row-card-item ">
+                       
+                        <i class="bi bi-globe icon-globe"></i>
+                        <p class="nome-servico">Intranet</p>
+                    </div>
+                    <div class="row-card-item">
+                        
+                        <i class="bi bi-tools icon-tool"></i>
+                        <p class="nome-servico">GLPI</p>
+                    </div>
+                    <div class="row-card-item">
+                        
+                        <i class="bi bi-envelope icon-letter"></i>
+                        <p class="nome-servico ">Sugestões</p>
+                    </div>
+                    <div class="row-card-item">
+                        
+                        <i class="bi bi-gear icon-gear"></i>
+                        <p class="nome-servico">Em breve</p>
+                    </div>
+                </div>
+        </div>
+    </section>

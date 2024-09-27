@@ -4,45 +4,67 @@
     box-sizing: border-box;
 }
 
-/* Container de serviços */
-.servicos {
-    background: rgb(11,88,96);
-background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100%);
 
+body{
+    /* background-image: linear-gradient(to right bottom, #09565f, #095a63, #095e68, #09626c, #096671, #0e6e78, #13777f, #187f86, #248d91, #2f9c9c, #3baaa7, #48b9b1); */
+    background: rgb(11,88,96);
+    background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
+
+
+
+.fundo{
+    opacity: 0.03; /* Transparência da imagem */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    z-index: 0;
+}
+
 
 /* Grid para os cards */
 .servicos .rows-cards {
     
     display: grid;
     grid-template-columns: repeat(2, 460px);
-    gap: 30px;
+    gap: 100px;
     justify-content: center;
 }
 
 .nome-servico{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     */ 
 }
+
+.nome-servico {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 /* Estilo dos cards */
 .servicos .row-card-item {
     /* border: 1px solid red; */
     position: relative;
     background-color: #e5e5e5;
+    width: 500px;
     height: 260px;
-    padding: 15px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     transition: background-color 0.3s ease;
-    box-shadow: 15px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 2rem;
+    
 }
 
 .servicos .row-card-item:hover {
@@ -64,22 +86,20 @@ background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Nome do serviço */
 .servicos .row-card-item p.nome-servico {
     position: absolute;
     bottom: 10px;
-    left: 20px;
     z-index: 2;
-    margin: 0;
+    margin: 1%;
     font-weight: bold;
-    color: #000000;
-    padding: 5px;
-    font-size: 2.2rem;
+    color: #000000c2;
+    font-size: 4rem;
+    
+    
 }
 
 /* Container de cards */
@@ -90,15 +110,16 @@ background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100
     background: linear-gradient(to bottom right, #ffffff, #e0e0e0); Gradiente opcional */
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
     margin: 20px;
+    
 }
 
 /* Ícones */
 .icon-globe, .icon-tool, .icon-letter, .icon-gear {
     position: absolute;
     top: 10px;
-    right: 10px;
-    font-size: 90px;
-    color: #000; /* Cor padrão do ícone */
+    right: 20px;
+    font-size: 45px;
+    color:#000000c2; /* Cor padrão do ícone */
     z-index: 3;
 }
 
@@ -109,6 +130,16 @@ background: linear-gradient(125deg, rgba(11,88,96,1) 0%, rgba(196,214,217,1) 100
   --green-200: #7ca4a9;
   --green-300: #6c9ca4;
   --green-500: #0b5860; */
+
+
+  
+/*
+    #09565F 
+    #096C77
+    #BFD7D8
+
+
+*/
 
 /* Intranet */
 /* .servicos .row-card-item:nth-child(1) { 
